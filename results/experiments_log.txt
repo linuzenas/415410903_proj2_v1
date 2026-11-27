@@ -1,0 +1,117 @@
+===== E0  baseline (same seed as the original run) =====
+iterations: 337, final log-likelihood: -1254.9813
+estimated phi: 0.6500 0.3500
+estimated mu1: 0.8741 2.0851   mu2: -0.7485 -2.0226
+estimated Sigma1: [3.2372 0.3299; 0.3299 2.2363]
+estimated Sigma2: [2.2001 0.0199; 0.0199 1.3879]
+--- for comparison, statistics of the points that really came from each Gaussian ---
+true phi: 0.6667 0.3333   (fraction of points: 0.6667 0.3333)
+sample mean 1: 0.8626 2.0265   sample mean 2: -0.8067 -2.1110
+sample cov 1: [3.1950 0.3337; 0.3337 2.3297]
+sample cov 2: [2.1718 -0.0587; -0.0587 1.2625]
+log-likelihood of the data if the true labels were used: -1255.1524
+number of points whose responsibility W(i,1) > 0.5 but that came from Gaussian 2: 4
+number of points whose responsibility W(i,2) > 0.5 but that came from Gaussian 1: 9
+log-likelihood never decreased: 1 (largest decrease between two iterations: -2.05e-12)
+  after   1 iterations log-likelihood = -1303.9754
+  after   2 iterations log-likelihood = -1271.9437
+  after   5 iterations log-likelihood = -1265.3388
+  after  10 iterations log-likelihood = -1259.9899
+  after  20 iterations log-likelihood = -1258.1610
+  after  50 iterations log-likelihood = -1255.0659
+  after 100 iterations log-likelihood = -1254.9813
+  after 200 iterations log-likelihood = -1254.9813
+===== E4  what EM looks like after a few iterations (same start as E0) =====
+after   1 iterations: phi = 0.4263 0.5737  mu1 = (1.027, 2.005)  mu2 = (-0.229, -0.362)
+after   5 iterations: phi = 0.4336 0.5664  mu1 = (1.103, 2.399)  mu2 = (-0.304, -0.694)
+after  20 iterations: phi = 0.5196 0.4804  mu1 = (1.031, 2.475)  mu2 = (-0.477, -1.329)
+after 337 iterations: phi = 0.6500 0.3500  mu1 = (0.874, 2.085)  mu2 = (-0.748, -2.023)
+initial means were: (1.180, 3.082) and (-0.437, 0.033)
+===== E1  same data, 20 different random initialisations (component A = the one near (1,2)) =====
+seed | iters |  final LL  |  phiA  |  muA              |  muB
+ 101 |  1000 | -1271.7763 | 0.7748 | (0.6172, 0.7547) | (-0.7638, 0.2780)
+ 102 |  1000 | -1271.7763 | 0.7748 | (0.6172, 0.7547) | (-0.7638, 0.2780)
+ 103 |   259 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 104 |  1000 | -1271.7763 | 0.7748 | (0.6172, 0.7547) | (-0.7638, 0.2780)
+ 105 |   316 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 106 |  1000 | -1271.7763 | 0.7748 | (0.6172, 0.7547) | (-0.7638, 0.2780)
+ 107 |   382 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 108 |   345 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 109 |   331 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 110 |   328 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 111 |   311 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 112 |   324 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 113 |   322 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 114 |  1000 | -1271.7763 | 0.7748 | (0.6172, 0.7547) | (-0.7638, 0.2780)
+ 115 |   328 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 116 |   336 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 117 |   343 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 118 |   361 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 119 |   308 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+ 120 |   351 | -1254.9813 | 0.6500 | (0.8741, 2.0851) | (-0.7485, -2.0226)
+distinct final log-likelihoods (rounded to 0.001): 2
+iterations: min 259, max 1000, mean 497.2
+===== E1b  different random data sets (true values: phi = 0.667/0.333, mu = (1,2) / (-1,-2)) =====
+seed | iters | phiA  | muA               | muB
+  11 |   163 | 0.6934 | (1.1571, 1.9841) | (-0.9887, -2.2275)
+  12 |   388 | 0.6702 | (1.0154, 1.9779) | (-1.0939, -2.0330)
+  13 |   142 | 0.6392 | (1.0745, 2.2656) | (-1.0052, -1.9411)
+  14 |   197 | 0.6800 | (0.9625, 1.9471) | (-0.8616, -2.1412)
+  15 |   126 | 0.6464 | (1.1501, 2.2045) | (-1.1626, -1.8467)
+===== E2  number of clusters k (same data and seed; stop when mu changes < 1e-8) =====
+ k | iters |  final LL  | free parameters |   BIC
+ 1 |     2 | -1276.7762 |               5 |   2582.07
+ 2 |   215 | -1254.9813 |              11 |   2572.70
+ 3 |  1000 | -1250.5627 |              17 |   2598.09
+   k=3: phi = [0.636 0.0485 0.315]
+ 4 |   754 | -1241.8345 |              23 |   2614.86
+ 5 |   846 | -1239.0545 |              29 |   2643.52
+===== E3  different initial values (k = 2, same data) =====
+both means start at the same point (0,0)
+  iterations 2, final LL -1276.7762, phi = 0.5000 0.5000, mu1 = (0.306, 0.647), mu2 = (0.306, 0.647)
+  Sigma1 = [3.473 1.738; 1.738 5.778]   Sigma2 = [3.473 1.738; 1.738 5.778]
+means start at (0,0) and (0.01,0.01)
+  iterations 1000, final LL -1271.7763, phi = 0.2252 0.7748, mu1 = (-0.764, 0.278), mu2 = (0.617, 0.755)
+  Sigma1 = [2.564 -0.647; -0.647 7.284]   Sigma2 = [3.308 2.283; 2.283 5.289]
+means start at the true means
+  iterations 315, final LL -1254.9813, phi = 0.6500 0.3500, mu1 = (0.874, 2.085), mu2 = (-0.748, -2.023)
+  Sigma1 = [3.237 0.330; 0.330 2.236]   Sigma2 = [2.200 0.020; 0.020 1.388]
+both means start inside the upper cluster
+  iterations 437, final LL -1254.9813, phi = 0.3500 0.6500, mu1 = (-0.748, -2.023), mu2 = (0.874, 2.085)
+  Sigma1 = [2.200 0.020; 0.020 1.388]   Sigma2 = [3.237 0.330; 0.330 2.236]
+means start swapped: (-1,-2) and (1,2)
+  iterations 315, final LL -1254.9813, phi = 0.3500 0.6500, mu1 = (-0.748, -2.023), mu2 = (0.874, 2.085)
+  Sigma1 = [2.200 0.020; 0.020 1.388]   Sigma2 = [3.237 0.330; 0.330 2.236]
+initial covariance 0.01*I (too small)
+  RESULT: NaN after 1000 iterations (phi = [NaN NaN])
+initial covariance 100*I (very large)
+  iterations 1000, final LL -1271.7763, phi = 0.7748 0.2252, mu1 = (0.617, 0.755), mu2 = (-0.764, 0.278)
+  Sigma1 = [3.308 2.283; 2.283 5.289]   Sigma2 = [2.564 -0.647; -0.647 7.284]
+initial phi = (0.95, 0.05)
+  iterations 1000, final LL -1271.7763, phi = 0.7748 0.2252, mu1 = (0.617, 0.755), mu2 = (-0.764, 0.278)
+  Sigma1 = [3.308 2.283; 2.283 5.289]   Sigma2 = [2.564 -0.647; -0.647 7.284]
+===== E5  stopping rule (same data and start as E0) =====
+rule                      | iters | final LL    | muA
+max change of mu < 0.01   |    47 | -1255.126963 | (0.90290, 2.15313)
+max change of mu < 0.0001 |    92 | -1254.981281 | (0.87439, 2.08577)
+max change of mu < 1e-06  |   135 | -1254.981267 | (0.87412, 2.08511)
+max change of mu < 1e-10  |   222 | -1254.981267 | (0.87412, 2.08511)
+exact equality (original) |   337 | -1254.981267 | (0.87412, 2.08511)
+===== E6  changing the data that is generated =====
+second Gaussian moved to mean (0,0)  (clusters overlap more)
+  true  phi = 0.667 0.333, mu = (1.00, 2.00) and (0.00, 0.00)
+  found phi = 0.265 0.735, mu = (1.127, 3.239) and (0.464, 0.620), iterations 830
+  Sigma A = [4.299 0.078; 0.078 1.249]   Sigma B = [2.352 0.220; 0.220 1.800]
+second Gaussian moved to mean (0.5,0.5) (strong overlap)
+  true  phi = 0.667 0.333, mu = (1.00, 2.00) and (0.50, 0.50)
+  found phi = 0.708 0.292, mu = (1.151, 1.569) and (-0.028, 1.266), iterations 1000
+  Sigma A = [2.430 0.727; 0.727 2.424]   Sigma B = [2.920 -1.110; -1.110 2.858]
+unbalanced sizes: 280 and 20 points
+  true  phi = 0.933 0.067, mu = (1.00, 2.00) and (-1.00, -2.00)
+  found phi = 0.781 0.219, mu = (0.547, 1.447) and (1.686, 2.819), iterations 191
+  Sigma A = [3.335 0.707; 0.707 3.630]   Sigma B = [3.289 -0.705; -0.705 0.569]
+more data: 1000 and 500 points
+  true  phi = 0.667 0.333, mu = (1.00, 2.00) and (-1.00, -2.00)
+  found phi = 0.656 0.344, mu = (0.928, 2.016) and (-0.979, -2.031), iterations 94
+  Sigma A = [3.133 0.126; 0.126 1.945]   Sigma B = [2.149 -0.053; -0.053 1.040]
+all experiments finished

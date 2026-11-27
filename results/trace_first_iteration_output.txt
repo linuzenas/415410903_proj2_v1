@@ -1,0 +1,20 @@
+data size: 300 x 2, first point x1 = (-3.6186, 4.5425)
+initial mu:
+   1.179983   3.082309
+  -0.436867   0.033028
+initial Sigma (= cov(X), same for both clusters):
+   3.4848   1.7436
+   1.7436   5.7975
+initial phi: 0.50 0.50
+
+E-step for the first data point:
+  pdf(1,:)   = 0.000311  0.000205
+  pdf_w(1,:) = 0.000155  0.000103
+  sum        = 0.000258
+  W(1,:)     = 0.6022  0.3978  (sums to 1.0000)
+column sums of W (soft number of points per cluster): 127.891 172.109 (total 300)
+log-likelihood before the update: -1303.9754
+
+M-step:
+  cluster 1: phi = 0.4263, mu = (1.0270, 2.0050), Sigma = [3.2676 0.8147; 0.8147 3.6406]
+  cluster 2: phi = 0.5737, mu = (-0.2295, -0.3615), Sigma = [2.9530 1.1561; 1.1561 4.9792]

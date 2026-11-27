@@ -1,0 +1,12 @@
+FINAL phi:
+   0.6500   0.3500
+FINAL mu (row j = cluster j):
+   0.8741   2.0851
+  -0.7485  -2.0226
+FINAL sigma{1}:
+   3.2372   0.3299
+   0.3299   2.2363
+FINAL sigma{2}:
+   2.200093   0.019883
+   0.019883   1.387857
+iterations used: 337

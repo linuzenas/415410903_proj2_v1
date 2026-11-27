@@ -1,0 +1,9 @@
+(a) start with phi0 = (0.95, 0.05), stop when mu changes by less than 1e-10 (at most 6000 iterations)
+    iteration   100: log-likelihood -1271.958461
+    iteration   500: log-likelihood -1271.776326
+    iteration  1000: log-likelihood -1271.776323
+    iteration  1319: log-likelihood -1271.776323
+    stopped after 1319 iterations, phi = 0.7748 0.2252
+(b) first E-step with Sigma = 0.01*I
+    points whose weighted density is exactly 0 for BOTH clusters: 53 of 300
+    -> W = 0/0 = NaN for those points, and the NaN spreads to mu, sigma and phi in the M-step
